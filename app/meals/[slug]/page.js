@@ -1,9 +1,9 @@
 import React from 'react'
 
 const DynamicMeals = ({params}) => {
-  return (
+return (
     <div>DynamicMeals {params.slug}</div>
-  )
+)
 }
 
 export default DynamicMeals
