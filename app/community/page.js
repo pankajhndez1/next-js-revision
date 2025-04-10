@@ -1,4 +1,5 @@
 "use client";
+import Modal from "@/components/modal";
 import { handleFormDataSubmit } from "@/server";
 import React from "react";
 import { useActionState } from "react";
@@ -10,7 +11,7 @@ const Community = () => {
     error: null,
   });
 
-  console.log(intialState,'intialState')
+  console.log(intialState, "intialState");
 
   return (
     <div>
@@ -19,7 +20,7 @@ const Community = () => {
         className="bg-red-500 flex flex-col w-fit p-2 gap-4"
       >
         <div className="flex justify-center items-center gap-4">
-          <label htmlfor="name">Name</label>
+          <label htmlFor="name">Name</label>
           <input
             className="bg-grey-400 border border-grey-200"
             id="name"
@@ -27,7 +28,7 @@ const Community = () => {
           />
         </div>
         <div className="flex justify-center items-center gap-4">
-          <label htmlfor="Class"> Class</label>
+          <label htmlFor="Class"> Class</label>
           <input
             className="bg-grey-400 border border-grey-200"
             id="class"
@@ -41,6 +42,7 @@ const Community = () => {
           Submit
         </button>
       </form>
+      <Modal />
     </div>
   );
 };
