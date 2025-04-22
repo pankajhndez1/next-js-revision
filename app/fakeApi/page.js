@@ -4,7 +4,7 @@ import axios from "axios";
 const FetchData = async () => {
   let data;
   try {
-    data = await axios.get("https://jsonplaceholder.typicode.cm/posts");
+    data = await axios.get("https://jsonplaceholder.typicode.com/posts");
     
   } catch (error) {
     console.error(error);
