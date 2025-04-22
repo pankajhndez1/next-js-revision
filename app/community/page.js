@@ -11,7 +11,7 @@ const Community = () => {
     error: null,
   });
 
-  console.log(intialState, "intialState");
+  
 
   return (
     <div>

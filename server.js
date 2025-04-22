@@ -2,7 +2,7 @@
 
 
 export const handleFormDataSubmit = async (prevState,formdata) => {
-    console.log(formdata, "formdata");
+    
     const payload = {};
 
     if (!formdata.name) {

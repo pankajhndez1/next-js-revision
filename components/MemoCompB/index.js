@@ -8,7 +8,7 @@ const MemoCompB = ({ magicalArr, setMagicalArr }) => {
     };
   });
 
-  console.log(magicalArr, "magicalArr");
+  
   return (
     <div>
       <button className="p-4 rounded-md cursor-pointer bg-red-500 border-2 border-black" onClick={() => setMagicalArr(myArr)}>

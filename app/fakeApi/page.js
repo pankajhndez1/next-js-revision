@@ -5,7 +5,7 @@ const FetchData = async () => {
   let data;
   try {
     data = await axios.get("https://jsonplaceholder.typicode.cm/posts");
-    console.log(data, "<<==data");
+    
   } catch (error) {
     console.error(error);
     throw new Error('Failed to fetch data from the server.');

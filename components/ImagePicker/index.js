@@ -15,11 +15,10 @@ const ImagePicker = () => {
     const currentImage = e.target.files[0];
     const blob = new Blob([currentImage], { type: "image/jpeg" });
     const blobURL = URL.createObjectURL(blob);
-    console.log(blobURL, "blobURL");
+    
     setImagePreview(blobURL);
   };
 
-  console.log(imagePreview, "imagePreview");
   return (
     <div>
       <input
